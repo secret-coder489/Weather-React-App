@@ -1,0 +1,155 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif; /* Use Arial font for the body text */
+  background-color: #e0f7fa; /* Light cyan background */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add padding around the body */
+}
+
+/* Container for the main content */
+.container {
+  max-width: 600px; /* Limit the width of the container */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Add padding inside the container */
+  background: white; /* White background for the container */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Main heading style */
+h1 {
+  text-align: center; /* Center the heading */
+  color: #00796b; /* Dark teal color */
+}
+
+/* Subheading style */
+h2 {
+  margin: 10px 0; /* Vertical margin for spacing */
+  color: #00796b; /* Dark teal color */
+}
+
+/* City search input styles */
+.city-search {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the input and buttons */
+  margin-bottom: 20px; /* Space below the search area */
+}
+
+/* Text input styles */
+input[type="text"] {
+  width: calc(100% - 90px); /* Responsive width calculation */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #00796b; /* Dark teal border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for input */
+  margin-right: 10px; /* Space to the right of the input */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Padding for buttons */
+  background-color: #00796b; /* Dark teal background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Weather display styles */
+.weather-display {
+  text-align: center; /* Center text inside the weather display */
+  padding: 20px; /* Padding inside the display */
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff; /* White background */
+  margin-bottom: 20px; /* Space below the weather display */
+}
+
+/* Forecast section styles */
+.forecast {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out forecast cards */
+  flex-wrap: wrap; /* Allow wrapping of forecast cards */
+}
+
+/* Individual forecast card styles */
+.forecast-card {
+  text-align: center; /* Center text inside the card */
+  margin: 10px; /* Space around each card */
+  padding: 15px; /* Padding inside the card */
+  border: 1px solid #80cbc4; /* Lighter teal border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #ffffff; /* White background for cards */
+  width: 100%; /* Full width of the container */
+  max-width: 120px; /* Fixed max width for cards */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.3s; /* Smooth transformation effect */
+}
+
+/* Hover effect for forecast cards */
+.forecast-card:hover {
+  transform: translateY(-5px); /* Lift the card on hover */
+}
+
+/* Image styles for weather icons in forecast cards */
+.forecast-card img {
+  width: 50px; /* Set width for icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Toggle button styles */
+.toggle-button {
+  display: block; /* Block element */
+  margin: 20px auto; /* Center button with margin */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #80cbc4; /* Lighter teal background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for toggle button */
+.toggle-button:hover {
+  background-color: #004d40; /* Darker teal on hover */
+}
+
+/* Clear button styles */
+.clear-button {
+  margin-left: 10px; /* Space to the left of the button */
+  background-color: #ff4d4d; /* Light red background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 5px 10px; /* Padding for a better click area */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* Hover effect for clear button */
+.clear-button:hover {
+  background-color: #ff1a1a; /* Darker red on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .forecast {
+    flex-direction: column; /* Stack forecast cards vertically on small screens */
+    align-items: center; /* Center cards */
+  }
+
+  .forecast-card {
+    max-width: 90%; /* Make cards responsive */
+  }
+
+  input[type="text"] {
+    width: calc(100% - 60px); /* Adjust input width for smaller screens */
+  }
+}
