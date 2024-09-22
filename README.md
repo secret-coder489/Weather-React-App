@@ -1,8 +1,10 @@
-# Getting Started with Create React App
+I have created Weather Application using React Js , html, css & javascript 
+In the application you can search any city to know weather , I have added all required key points in the application including error please check.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+###npm install or npm install --f
 
 In the project directory, you can run:
 
